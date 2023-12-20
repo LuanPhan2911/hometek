@@ -35,20 +35,11 @@ const App = () => {
 
           {/* luan */}
           <Route path="/admin" element={<DashBoard />}>
-            <Route path="products" element={<Product />}></Route>
-            <Route path="products/create" element={<ProductCreate />}></Route>
-            <Route path="products/update" element={<Product />}></Route>
-
-            <Route path="customers" element={<Customer />}></Route>
-            <Route path="categories" element={<Category />}></Route>
-            <Route
-              path="categories/create"
-              element={<CategoryCreate />}
-            ></Route>
-            <Route
-              path="categories/update"
-              element={<CategoryUpdate />}
-            ></Route>
+            <Route path="san-pham" element={<Product />}></Route>
+            {/* <Route path="don-hang" element={<Product />}></Route>
+            <Route path="khach-hang" element={<Customer />}></Route>
+            <Route path="khuyen-mai" element={<Customer />}></Route>
+            <Route path="danh-gia" element={<Customer />}></Route> */}
           </Route>
 
           {/* endluan */}

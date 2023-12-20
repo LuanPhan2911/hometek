@@ -1,6 +1,6 @@
 import AdminLayout from "../../../Components/Admin/AdminLayout";
 
 const Product = () => {
-  return <></>;
+  return <>121221</>;
 };
 export default Product;

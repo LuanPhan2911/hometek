@@ -1,65 +1,86 @@
-import { Link } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import "./Sidebar.scss";
 const SideBar = () => {
   return (
     <>
-      <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+      <div className="sidebar-admin col-auto col-md-3 col-xl-2 px-0">
+        <Link
+          to="/"
+          className="sidebar-home pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+        >
+          <span className="fs-3 d-none d-sm-inline text-center w-100 text-uppercase">
+            Home tek
+          </span>
+        </Link>
         <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-          <Link
-            to="/"
-            className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-          >
-            <span className="fs-5 d-none d-sm-inline">Hometek</span>
-          </Link>
           <ul
             className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
             id="menu"
           >
             <li className="nav-item">
-              <Link to="/admin" className="nav-link align-middle px-0">
-                <i className="fs-4 bi-house"></i>{" "}
-                <span className="ms-1 d-none d-sm-inline">Home</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/admin/customers"
-                className="nav-link align-middle px-0"
-              >
-                <i className="fs-4 bi-person-circle"></i>{" "}
-                <span className="ms-1 d-none d-sm-inline">Customers</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/admin/products" className="nav-link align-middle px-0">
-                <i className="fs-4 bi-book"></i>{" "}
-                <span className="ms-1 d-none d-sm-inline">Products</span>
-              </Link>
-            </li>
-            {/* <li className="nav-item">
-              <Link to="/admin/reports" className="nav-link align-middle px-0">
-                <i className="fs-4 bi-flag"></i>{" "}
-                <span className="ms-1 d-none d-sm-inline">Reports</span>
-              </Link>
-            </li> */}
-            <li className="nav-item">
-              <Link
-                to="/admin/categories"
-                className="nav-link align-middle px-0"
+              <NavLink
+                to="/admin/don-hang"
+                className={({ isActive }) => {
+                  return `align-middle px-0 ${isActive && "active"}`;
+                }}
               >
                 <i className="fs-4 bi-newspaper"></i>{" "}
-                <span className="ms-1 d-none d-sm-inline">Category</span>
-              </Link>
+                <span className="ms-1 d-none d-sm-inline">
+                  Quản lý đơn hàng
+                </span>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
-                to="/logout"
-                className="nav-link align-middle px-0"
-                id="logout"
+              <NavLink
+                to="/admin/san-pham"
+                className={({ isActive }) => {
+                  return `align-middle px-0 ${isActive && "active"}`;
+                }}
               >
-                <i className="fs-4 bi-box-arrow-left"></i>{" "}
-                <span className="ms-1 d-none d-sm-inline">Sign out</span>
-              </Link>
+                <i className="fs-4 bi-list"></i>{" "}
+                <span className="ms-1 d-none d-sm-inline">
+                  Quản lý sản phẩm
+                </span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/admin/khach-hang"
+                className={({ isActive }) => {
+                  return `align-middle px-0 ${isActive && "active"}`;
+                }}
+              >
+                <i className="fs-4 bi-person"></i>{" "}
+                <span className="ms-1 d-none d-sm-inline">
+                  Quản lý khách hàng
+                </span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/admin/danh-gia"
+                className={({ isActive }) => {
+                  return `align-middle px-0 ${isActive && "active"}`;
+                }}
+              >
+                <i className="fs-4 bi-flag"></i>{" "}
+                <span className="ms-1 d-none d-sm-inline">
+                  Quản lý đánh giá
+                </span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/admin/khuyen-mai"
+                className={({ isActive }) => {
+                  return `align-middle px-0 ${isActive && "active"}`;
+                }}
+              >
+                <i className="fs-4 bi-archive"></i>{" "}
+                <span className="ms-1 d-none d-sm-inline">
+                  Quản lý khuyến mãi
+                </span>
+              </NavLink>
             </li>
           </ul>
         </div>

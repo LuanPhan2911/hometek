@@ -2,17 +2,14 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import SideBar from "./SideBar";
 
-const AdminLayout = ({ offcanvasTitle, offcanvasBody }) => {
+const AdminLayout = () => {
   return (
     <div className="container-fluid">
       <div className="row flex-nowrap">
         <SideBar />
         <div className="col">
-          <div className="container">
-            <Header
-              offcanvasTitle={offcanvasTitle}
-              offcanvasBody={offcanvasBody}
-            />
+          <div className="container-fluid">
+            <Header />
             {<Outlet />}
           </div>
         </div>
