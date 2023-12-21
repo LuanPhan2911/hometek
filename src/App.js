@@ -16,6 +16,8 @@ import BlogCreate from "./Pages/Admin/Blog/BlogCreate";
 import BlogUpdate from "./Pages/Admin/Blog/BlogUpdate";
 import Rate from "./Pages/Admin/Rating/Rate";
 import RateUpdate from "./Pages/Admin/Rating/RateUpdate";
+import Order from "./Pages/Admin/Order/Order";
+import OrderUpdate from "./Pages/Admin/Order/OrderUpdate";
 
 const App = () => {
   return (
@@ -51,7 +53,8 @@ const App = () => {
             <Route path="danh-gia" element={<Rate />}></Route>
             <Route path="danh-gia/update" element={<RateUpdate />}></Route>
 
-            <Route path="don-hang" element={<Product />}></Route>
+            <Route path="don-hang" element={<Order />}></Route>
+            <Route path="don-hang/update" element={<OrderUpdate />}></Route>
 
             <Route path="khuyen-mai" element={<Customer />}></Route>
           </Route>
