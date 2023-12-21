@@ -1,0 +1,46 @@
+const BlogCreate = () => {
+  return (
+    <div className="card">
+      <div className="card-header">
+        <h3 className="text-center fw-bold"> Thêm bài viết mới</h3>
+      </div>
+      <div className="card-body d-flex flex-column align-items-center">
+        <div className="col-md-8">
+          <label className="form-label">
+            Blog ID
+            <span className="text-danger">(*)</span>
+          </label>
+          <input className="form-control" name="name" />
+        </div>
+        <div className="col-md-8">
+          <label className="form-label">
+            Blog Title
+            <span className="text-danger">(*)</span>
+          </label>
+          <input className="form-control" name="name" />
+        </div>
+        <div className="col-md-8">
+          <label className="form-label">
+            Content
+            <span className="text-danger">(*)</span>
+          </label>
+          <textarea className="form-control" name="name" rows={5} />
+        </div>
+        <div className="col-md-8">
+          <label className="form-label">
+            Image
+            <span className="text-danger">(*)</span>
+          </label>
+          <input
+            className="form-control"
+            name="name"
+            type="file"
+            title="Chọn tệp"
+          />
+        </div>
+        <button className="btn btn-success my-2">Lưu Blog</button>
+      </div>
+    </div>
+  );
+};
+export default BlogCreate;

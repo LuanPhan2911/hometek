@@ -7,23 +7,38 @@ const ProductCreate = () => {
         </div>
         <div className="card-body d-flex flex-column align-items-center">
           <div className="col-md-8">
-            <label className="form-label">ID Sản phẩm</label>
+            <label className="form-label">
+              ID Sản phẩm
+              <span className="text-danger">(*)</span>
+            </label>
             <input className="form-control" name="name" />
           </div>
           <div className="col-md-8">
-            <label className="form-label">Tên sản phẩm</label>
+            <label className="form-label">
+              Tên sản phẩm
+              <span className="text-danger">(*)</span>
+            </label>
             <input className="form-control" name="name" />
           </div>
           <div className="col-md-8">
-            <label className="form-label">Mô tả</label>
+            <label className="form-label">
+              Mô tả
+              <span className="text-danger">(*)</span>
+            </label>
             <input className="form-control" name="name" />
           </div>
           <div className="col-md-8">
-            <label className="form-label">Giá</label>
+            <label className="form-label">
+              Giá
+              <span className="text-danger">(*)</span>
+            </label>
             <input className="form-control" name="name" />
           </div>
           <div className="col-md-8">
-            <label className="form-label">Hình ảnh</label>
+            <label className="form-label">
+              Hình ảnh
+              <span className="text-danger">(*)</span>
+            </label>
             <input
               className="form-control"
               name="name"
@@ -32,7 +47,10 @@ const ProductCreate = () => {
             />
           </div>
           <div className="col-md-8">
-            <label className="form-label">Nhóm sản phẩm</label>
+            <label className="form-label">
+              Nhóm sản phẩm
+              <span className="text-danger">(*)</span>
+            </label>
             <input className="form-control" name="name" />
           </div>
           <button className="btn btn-success my-2">Lưu sản phẩm</button>

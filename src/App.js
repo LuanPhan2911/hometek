@@ -11,6 +11,9 @@ import Customer from "./Pages/Admin/Customers/Customer";
 import ProductCreate from "./Pages/Admin/Products/ProductCreate";
 import CategoryCreate from "./Pages/Admin/Category/CategoryCreate";
 import CategoryUpdate from "./Pages/Admin/Category/CategoryUpdate";
+import Blog from "./Pages/Admin/Blog/Blog";
+import BlogCreate from "./Pages/Admin/Blog/BlogCreate";
+import BlogUpdate from "./Pages/Admin/Blog/BlogUpdate";
 
 const App = () => {
   return (
@@ -39,6 +42,11 @@ const App = () => {
             <Route path="san-pham/create" element={<ProductCreate />}></Route>
 
             <Route path="khach-hang" element={<Customer />}></Route>
+
+            <Route path="blog" element={<Blog />}></Route>
+            <Route path="blog/create" element={<BlogCreate />}></Route>
+            <Route path="blog/update" element={<BlogUpdate />}></Route>
+
             {/* <Route path="don-hang" element={<Product />}></Route>
 
             <Route path="khuyen-mai" element={<Customer />}></Route>

@@ -32,6 +32,17 @@ const SideBar = () => {
             </li>
             <li className="nav-item">
               <NavLink
+                to="/admin/blog"
+                className={({ isActive }) => {
+                  return `align-middle px-0 ${isActive && "active"}`;
+                }}
+              >
+                <i className="fs-4 bi-backpack"></i>{" "}
+                <span className="ms-1 d-none d-sm-inline">Quản lý Blog</span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
                 to="/admin/san-pham"
                 className={({ isActive }) => {
                   return `align-middle px-0 ${isActive && "active"}`;
