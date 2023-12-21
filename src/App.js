@@ -18,6 +18,9 @@ import Rate from "./Pages/Admin/Rating/Rate";
 import RateUpdate from "./Pages/Admin/Rating/RateUpdate";
 import Order from "./Pages/Admin/Order/Order";
 import OrderUpdate from "./Pages/Admin/Order/OrderUpdate";
+import Voucher from "./Pages/Admin/Voucher/Voucher";
+import VoucherCreate from "./Pages/Admin/Voucher/VoucherCreate";
+import VoucherUpdate from "./Pages/Admin/Voucher/VoucherUpdate";
 
 const App = () => {
   return (
@@ -56,7 +59,9 @@ const App = () => {
             <Route path="don-hang" element={<Order />}></Route>
             <Route path="don-hang/update" element={<OrderUpdate />}></Route>
 
-            <Route path="khuyen-mai" element={<Customer />}></Route>
+            <Route path="khuyen-mai" element={<Voucher />}></Route>
+            <Route path="khuyen-mai/create" element={<VoucherCreate />}></Route>
+            <Route path="khuyen-mai/update" element={<VoucherUpdate />}></Route>
           </Route>
 
           {/* endluan */}

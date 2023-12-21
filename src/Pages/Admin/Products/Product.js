@@ -81,7 +81,7 @@ const Product = () => {
           </div>
           <div className="col-lg-4 d-flex justify-content-end">
             <button className="btn search-btn mx-2">Tìm kiếm</button>
-            <Link className="btn add-product-btn" to={"create"}>
+            <Link className="btn add-btn" to={"create"}>
               Thêm sản phẩm
             </Link>
           </div>
