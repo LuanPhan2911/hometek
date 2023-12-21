@@ -37,8 +37,10 @@ const App = () => {
           <Route path="/admin" element={<DashBoard />}>
             <Route path="san-pham" element={<Product />}></Route>
             <Route path="san-pham/create" element={<ProductCreate />}></Route>
-            {/* <Route path="don-hang" element={<Product />}></Route>
+
             <Route path="khach-hang" element={<Customer />}></Route>
+            {/* <Route path="don-hang" element={<Product />}></Route>
+
             <Route path="khuyen-mai" element={<Customer />}></Route>
             <Route path="danh-gia" element={<Customer />}></Route> */}
           </Route>

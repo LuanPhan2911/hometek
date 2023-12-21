@@ -96,7 +96,7 @@ const Product = () => {
               <option>1 đến 3 triệu</option>
             </select>
           </div>
-          <label className="col-lg-2 col-form-label">Tên sản phẩm: </label>
+          <label className="col-lg-2 col-form-label">Sắp xếp theo: </label>
           <div className="col-lg-3">
             <select className="form-select">
               <option>Giá: Cao đến thấp</option>
