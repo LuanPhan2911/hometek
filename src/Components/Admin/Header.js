@@ -10,13 +10,11 @@ const Header = () => {
           <div class="input-group">
             <input
               type="text"
-              class="form-control bg-light border-0 small"
-              placeholder="Search for..."
-              aria-label="Search"
-              aria-describedby="basic-addon2"
+              class="form-control bg-dark-subtle border-0"
+              placeholder="Tìm kiếm..."
             />
             <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
+              <button class="btn search-btn" type="button">
                 <i class="bi bi-search"></i>
               </button>
             </div>
