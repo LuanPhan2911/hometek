@@ -87,7 +87,7 @@ const Product = () => {
           </div>
         </div>
         <div className="mb-3 row">
-          <label className="col-lg-2 col-form-label">Tên sản phẩm: </label>
+          <label className="col-lg-2 col-form-label">Khoản giá: </label>
           <div className="col-lg-3">
             <select className="form-select">
               <option>1 đến 3 triệu</option>

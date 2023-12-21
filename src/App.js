@@ -14,6 +14,8 @@ import CategoryUpdate from "./Pages/Admin/Category/CategoryUpdate";
 import Blog from "./Pages/Admin/Blog/Blog";
 import BlogCreate from "./Pages/Admin/Blog/BlogCreate";
 import BlogUpdate from "./Pages/Admin/Blog/BlogUpdate";
+import Rate from "./Pages/Admin/Rating/Rate";
+import RateUpdate from "./Pages/Admin/Rating/RateUpdate";
 
 const App = () => {
   return (
@@ -46,11 +48,12 @@ const App = () => {
             <Route path="blog" element={<Blog />}></Route>
             <Route path="blog/create" element={<BlogCreate />}></Route>
             <Route path="blog/update" element={<BlogUpdate />}></Route>
+            <Route path="danh-gia" element={<Rate />}></Route>
+            <Route path="danh-gia/update" element={<RateUpdate />}></Route>
 
-            {/* <Route path="don-hang" element={<Product />}></Route>
+            <Route path="don-hang" element={<Product />}></Route>
 
             <Route path="khuyen-mai" element={<Customer />}></Route>
-            <Route path="danh-gia" element={<Customer />}></Route> */}
           </Route>
 
           {/* endluan */}
