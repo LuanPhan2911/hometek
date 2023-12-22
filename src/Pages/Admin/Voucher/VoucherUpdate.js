@@ -50,7 +50,7 @@ function VoucherUpdate() {
             </select>
           </div>
 
-          <button className="btn btn-success">Cập nhật</button>
+          <button className="btn btn-success my-2">Cập nhật</button>
         </div>
       </div>
     </>

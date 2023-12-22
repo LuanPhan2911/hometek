@@ -16,7 +16,7 @@ const OrderUpdate = () => {
         <span className="bg-warning-subtle p-2">Đang vận chuyển</span>
       </div>
       <div className="rate-content">
-        <div className="row">
+        <div className="row border-bottom mb-3">
           <div className="col-lg-6">
             <div className="address">Địa chỉ giao hàng</div>
             <div>KTX khu B</div>
@@ -26,7 +26,7 @@ const OrderUpdate = () => {
             <div>Thanh toán khi nhận hàng</div>
           </div>
         </div>
-        <h4>Chi tiết đơn hàng</h4>
+        <h4 className="fw-bold">Chi tiết đơn hàng</h4>
         <table className="table table-hover table-bordered table-striped">
           <thead className="table-active">
             <tr>
@@ -39,36 +39,41 @@ const OrderUpdate = () => {
           <tbody>
             <tr>
               <td>
-                Nồi chiên không dầu Philip
-                <div className="type">Phân loại: Đen</div>
+                <div className="product-name fw-bold">
+                  {" "}
+                  Nồi chiên không dầu Philip
+                </div>
+                <div className="type small">Phân loại: Đen</div>
               </td>
-              <td>2.300.000đ</td>
-              <td>1</td>
-              <td>2.300.000đ</td>
+              <td className="fw-bold">2.300.000đ</td>
+              <td className="fw-bold">1</td>
+              <td className="fw-bold">2.300.000đ</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
               <td colSpan={2}></td>
-              <td>Tổng</td>
-              <td>2.300.000đ</td>
+              <td className="text-uppercase fw-bold">Tổng</td>
+              <td className="fw-bold">2.300.000đ</td>
             </tr>
           </tfoot>
         </table>
       </div>
       <div className="rate-update">
-        <h3>Cập nhật trạng thái đơn hàng</h3>
-        <div className="col-lg-2">
-          <select className="form-select">
-            <option>Đã hủy</option>
-            <option>Đã xác nhận</option>
-            <option>Hoàn thành</option>
-            <option>Chờ xác nhận</option>
-            <option>Đang vận chuyển</option>
-          </select>
-        </div>
-        <div className="col">
-          <button className="btn edit-btn">Cập nhật</button>
+        <h4 className="fw-bold">Cập nhật trạng thái đơn hàng</h4>
+        <div className="row">
+          <div className="col-lg-2">
+            <select className="form-select">
+              <option>Đã hủy</option>
+              <option>Đã xác nhận</option>
+              <option>Hoàn thành</option>
+              <option>Chờ xác nhận</option>
+              <option>Đang vận chuyển</option>
+            </select>
+          </div>
+          <div className="col">
+            <button className="btn edit-btn">Cập nhật</button>
+          </div>
         </div>
       </div>
     </>

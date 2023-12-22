@@ -76,41 +76,37 @@ const Product = () => {
       <div className="product-filter">
         <div className="mb-3 row">
           <label className="col-lg-2 col-form-label">Tên sản phẩm: </label>
-          <div className="col-lg-6">
-            <input className="form-control" />
+          <div className="col-lg-6 my-2 col-sm-12">
+            <input className="form-control" placeholder="Nhập tên sản phẩm" />
           </div>
-          <div className="col-lg-4 d-flex justify-content-end">
-            <button className="btn search-btn mx-2">Tìm kiếm</button>
-            <Link className="btn add-btn" to={"create"}>
+          <div className="col-lg-4">
+            <button className="btn search-btn">Tìm kiếm</button>
+            <Link className="btn add-btn mx-2" to={"them"}>
               Thêm sản phẩm
             </Link>
           </div>
         </div>
         <div className="mb-3 row">
-          <label className="col-lg-2 col-form-label">Khoản giá: </label>
-          <div className="col-lg-3">
+          <label className="col-lg-2 col-form-label">Khoảng giá: </label>
+          <div className="col-lg-2">
             <select className="form-select">
-              <option>1 đến 3 triệu</option>
-              <option>1 đến 3 triệu</option>
-              <option>1 đến 3 triệu</option>
-              <option>1 đến 3 triệu</option>
+              <option>Cao đến thấp</option>
+              <option>Thấp đến cao</option>
             </select>
           </div>
           <label className="col-lg-2 col-form-label">Sắp xếp theo: </label>
-          <div className="col-lg-3">
+          <div className="col-lg-2">
             <select className="form-select">
-              <option>Giá: Cao đến thấp</option>
-              <option>Giá: Thấp đến cao</option>
-              <option>Mới nhât</option>
+              <option>Mới nhất</option>
               <option>Củ nhất</option>
             </select>
           </div>
-          <div className="col-lg-2 d-flex justify-content-end">
+          <div className="col-lg-2">
             <button className="btn btn-danger">Xóa bộ lọc</button>
           </div>
         </div>
       </div>
-      <div className="product-table">
+      <div className="product-table table-responsive">
         <table className="table table-hover table-bordered table-striped">
           <thead className="table-active">
             <tr>
@@ -133,7 +129,7 @@ const Product = () => {
                     <td>{item.price}</td>
                     <td>{item.created_at}</td>
                     <td>
-                      <Link className="btn edit-btn" to={"update"}>
+                      <Link className="btn edit-btn" to={"cap-nhat"}>
                         Sửa
                       </Link>
                       <button className="btn btn-danger mx-2">Xóa</button>

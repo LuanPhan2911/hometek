@@ -46,22 +46,25 @@ const App = () => {
           {/* luan */}
           <Route path="/admin" element={<DashBoard />}>
             <Route path="san-pham" element={<Product />}></Route>
-            <Route path="san-pham/create" element={<ProductCreate />}></Route>
+            <Route path="san-pham/them" element={<ProductCreate />}></Route>
 
             <Route path="khach-hang" element={<Customer />}></Route>
 
             <Route path="blog" element={<Blog />}></Route>
-            <Route path="blog/create" element={<BlogCreate />}></Route>
-            <Route path="blog/update" element={<BlogUpdate />}></Route>
+            <Route path="blog/them" element={<BlogCreate />}></Route>
+            <Route path="blog/cap-nhat" element={<BlogUpdate />}></Route>
             <Route path="danh-gia" element={<Rate />}></Route>
-            <Route path="danh-gia/update" element={<RateUpdate />}></Route>
+            <Route path="danh-gia/cap-nhat" element={<RateUpdate />}></Route>
 
             <Route path="don-hang" element={<Order />}></Route>
-            <Route path="don-hang/update" element={<OrderUpdate />}></Route>
+            <Route path="don-hang/cap-nhat" element={<OrderUpdate />}></Route>
 
             <Route path="khuyen-mai" element={<Voucher />}></Route>
-            <Route path="khuyen-mai/create" element={<VoucherCreate />}></Route>
-            <Route path="khuyen-mai/update" element={<VoucherUpdate />}></Route>
+            <Route path="khuyen-mai/them" element={<VoucherCreate />}></Route>
+            <Route
+              path="khuyen-mai/cap-nhat"
+              element={<VoucherUpdate />}
+            ></Route>
           </Route>
 
           {/* endluan */}

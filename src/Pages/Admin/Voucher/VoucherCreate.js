@@ -48,7 +48,7 @@ function VoucherCreate() {
             </select>
           </div>
 
-          <button className="btn btn-success">Lưu</button>
+          <button className="btn btn-success my-2">Lưu</button>
         </div>
       </div>
     </>

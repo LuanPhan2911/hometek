@@ -26,35 +26,35 @@ function Voucher() {
       <div className="voucher-filter">
         <div className="mb-3 row">
           <label className="col-lg-2 col-form-label">Mã voucher: </label>
-          <div className="col-lg-6">
+          <div className="col-lg-6 my-2">
             <input className="form-control" />
           </div>
-          <div className="col-lg-4 d-flex justify-content-end">
-            <button className="btn search-btn mx-2">Tìm kiếm</button>
-            <Link className="btn add-btn" to={"create"}>
+          <div className="col-lg-4">
+            <button className="btn search-btn">Tìm kiếm</button>
+            <Link className="btn add-btn mx-2" to={"them"}>
               Thêm mã
             </Link>
           </div>
         </div>
         <div className="mb-3 row">
           <label className="col-lg-2 col-form-label">Sắp xếp theo: </label>
-          <div className="col-lg-3">
+          <div className="col-lg-2">
             <select className="form-select">
               <option>Khuyến mãi</option>
             </select>
           </div>
           <label className="col-lg-2 col-form-label">Tình trạng: </label>
-          <div className="col-lg-3">
+          <div className="col-lg-2 my-2">
             <select className="form-select">
               <option>Còn hiệu lực</option>
             </select>
           </div>
-          <div className="col-lg-2 d-flex justify-content-end">
+          <div className="col-lg-2">
             <button className="btn btn-danger">Xóa bộ lọc</button>
           </div>
         </div>
       </div>
-      <div className="voucher-table">
+      <div className="voucher-table table-responsive">
         <table className="table table-hover table-bordered table-striped">
           <thead className="table-active">
             <tr>
@@ -78,7 +78,7 @@ function Voucher() {
                     <td>{item.endDate}</td>
                     <td>
                       <button className="btn active-btn">Còn hiệu lực</button>
-                      <Link className="btn edit-btn mx-2" to={"update"}>
+                      <Link className="btn edit-btn mx-2" to={"cap-nhat"}>
                         Sửa
                       </Link>
                       <button className="btn btn-danger">Xóa</button>

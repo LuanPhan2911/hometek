@@ -1,7 +1,7 @@
 const BlogCreate = () => {
   return (
     <>
-      <div className="blog-title">
+      <div className="blog-title mb-3">
         <button className="btn bg-dark text-white">
           <i className="bi bi-chevron-left"></i>
         </button>

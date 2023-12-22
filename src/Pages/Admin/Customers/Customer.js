@@ -24,8 +24,12 @@ const Customer = () => {
     <>
       <div className="customer-filter">
         <div className="mb-3 row">
-          <div className="col-lg-8">
-            <input className="form-control" />
+          <label className="col-lg-2 form-col-label">Từ khóa</label>
+          <div className="col-lg-6 my-2">
+            <input
+              className="form-control"
+              placeholder="Nhập tên khách hàng, số điện thoại..."
+            />
           </div>
           <div className="col-lg-4">
             <button className="btn search-btn mx-2">Tìm kiếm</button>
@@ -33,23 +37,21 @@ const Customer = () => {
         </div>
         <div className="mb-3 row">
           <label className="col-lg-2 col-form-label">Sắp xếp theo: </label>
-          <div className="col-lg-6">
+          <div className="col-lg-6 my-2">
             <select className="form-select">
-              <option>Tên</option>
-              <option>Số điện thoại</option>
               <option>Gần đây nhất</option>
               <option>Củ nhất</option>
             </select>
           </div>
           <div className="col-lg-4">
             <button className="btn btn-danger mx-2">Xóa bộ lọc</button>
-            <Link className="btn add-customer-btn" to={"create"}>
+            <Link className="btn add-customer-btn" to={"them"}>
               Thêm khách hàng
             </Link>
           </div>
         </div>
       </div>
-      <div className="customer-table">
+      <div className="customer-table table-responsive">
         <table className="table table-hover table-bordered table-striped">
           <thead className="table-active">
             <tr>

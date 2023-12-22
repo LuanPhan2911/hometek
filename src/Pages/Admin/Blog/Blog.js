@@ -32,19 +32,19 @@ const Blog = () => {
     <>
       <div className="blog-filter">
         <div className="mb-3 row">
-          <label className="col-lg-2 col-form-label">Tên blog: </label>
-          <div className="col-lg-6">
+          <label className="col-lg-2 col-form-label">Tên bài viết: </label>
+          <div className="col-lg-6 my-2">
             <input className="form-control" />
           </div>
           <div className="col-lg-4 d-flex justify-content-end">
             <button className="btn search-btn mx-2">Tìm kiếm</button>
-            <Link className="btn add-blog-btn" to={"create"}>
-              Thêm Blog
+            <Link className="btn add-blog-btn" to={"them"}>
+              Thêm bài viết
             </Link>
           </div>
         </div>
       </div>
-      <div className="blog-table">
+      <div className="blog-table table-responsive">
         <table className="table table-hover table-bordered table-striped">
           <thead className="table-active">
             <tr>
@@ -64,7 +64,7 @@ const Blog = () => {
 
                     <td>{item.created_at}</td>
                     <td>
-                      <Link className="btn edit-btn" to={"update"}>
+                      <Link className="btn edit-btn" to={"cap-nhat"}>
                         Sửa
                       </Link>
                       <button className="btn btn-danger mx-2">Xóa</button>

@@ -35,7 +35,7 @@ function Order() {
     <>
       <div className="order-filter">
         <div className="mb-3 row">
-          <div className="col-lg-8">
+          <div className="col-lg-8 my-2">
             <input className="form-control" />
           </div>
           <div className="col-lg-4">
@@ -52,7 +52,7 @@ function Order() {
             </select>
           </div>
           <label className="col-lg-2 col-form-label">Tình trạng: </label>
-          <div className="col-lg-2">
+          <div className="col-lg-2 my-2">
             <select className="form-select">
               <option>Đã hủy</option>
               <option>Đã xác nhận</option>
@@ -66,7 +66,7 @@ function Order() {
           </div>
         </div>
       </div>
-      <div className="product-table">
+      <div className="product-table table-responsive">
         <table className="table table-hover table-bordered table-striped">
           <thead className="table-active">
             <tr>
@@ -92,7 +92,7 @@ function Order() {
                     <td>{item.created_at}</td>
                     <td>
                       <button className="btn btn-danger">Đã hủy</button>
-                      <Link className="btn edit-btn mx-2" to={"update"}>
+                      <Link className="btn edit-btn mx-2" to={"cap-nhat"}>
                         Sửa
                       </Link>
                       <button className="btn btn-danger">Xóa</button>
